@@ -33,18 +33,18 @@ Finally you can stop the server as follows:
 You may rebuild the server image:
 
 
-```$ docker build -t api-start .```
+```$ docker build -t api_final .```
 
-```$ docker run -d -p 8080:8080 api-start```
+```$ docker run -d -p 8080:8080 api_final```
 
 # Run tests
 
 You may build and run tests (client part):
 
 
-```$ docker build -t api-tests .```
+```$ docker build -t test_api .```
 
-```$ docker run -d -p 8080:8080 api-tests```
+```$ docker run -d -p 8080:8080 test_api```
 
 # Show logs
 

@@ -1,6 +1,6 @@
 # A basic api using the CherryPy framework and Python 3.9.2.
 # But before we start, it's better to taste delicious and tasty chicken!
-![Kurochka KFC](https://github.com/zinarous/api_exam/blob/main/KFC_logo.svg.png)
+![Kurochka KFC](https://github.com/zinarous/api_exam/blob/main/KFC.jpg)
 # Run
 Run it as follows:
 

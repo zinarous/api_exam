@@ -26,11 +26,13 @@ You can check all departments by http://locahost:8080/department/ Also it has fi
 Finally you can stop the server as follows:
 
 ``` $ docker-compose down ```
+
 # Build/Rebuild
 You may rebuild the server image:
 
 
 ```$ docker build -t api-start .```
+
 ```$ docker run -d -p 8080:8080 api-start```
 
 # Run tests
@@ -39,9 +41,11 @@ You may build and run tests (client part):
 
 
 ```$ docker build -t api-tests .```
+
 ```$ docker run -d -p 8080:8080 api-tests```
 
 # Show logs
 
 To show logs open client CLI and use:
+
 ```$ cat tests.log```

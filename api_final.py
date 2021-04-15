@@ -22,13 +22,13 @@ users = {
     '4': {
         'username': 'san',
         'email': 'mman@gmail.com',
-        'department': 'DTS',
+        'department': 'FRS',
         'date_joined': '2020-08-25'
     },
     '5': {
         'username': 'max',
         'email': 'mmansss@gmail.com',
-        'department': 'ART',
+        'department': 'LevelART',
         'date_joined': '2020-05-20'
     },
 }
@@ -44,18 +44,14 @@ class Users:
             for user in users:
                 if username in users[user]['username']:
                     data1.append(users[user])
-        return ('data: %s' % data1)
 
         if department == None:
             for deps in users:
-                data2.append(users[deps]["department"])
-            return ('Here all departments: %s' % data2)
+                data2.append(users[deps])
         else:
             for deps in users:
                 if department in users[deps]['department']:
                     data2.append(users[deps])
-
-        return ('data: %s' % data2)
 
         data3 = []
         for item in data1:
@@ -63,14 +59,6 @@ class Users:
                 data3.append(item)
         return ('data: %s' % data3)
 
-    # def dicts(self, data1, data2):
-    #     res = {}
-    #     for dep in depats:
-    #         for k, v in dep.items():
-    #             res[k] = res.get(k, 0.) + v
-    #     for k, v in res.items():
-    #         return(f'{k}: {v}')
-    #     return dicts(data3)
     exposed = True
 
 class Deps:
@@ -80,7 +68,7 @@ class Deps:
         if department == None:
             for deps in users:
                 data1.append(users[deps]["department"])
-            return ('Here all departments: %s' % data1)
+            return ('Here all departments: %s' % list(sorted(set(data1))))
         else:
             for deps in users:
                 if department in users[deps]['department']:
@@ -89,8 +77,8 @@ class Deps:
         return ('data: %s' % data1)
     exposed = True
 
-if __name__ == '__main__':
-
+# if __name__ == '__main__':
+def serv_start():
     cherrypy.tree.mount(
         Users(), '/api/users',
         {'/':
@@ -104,6 +92,7 @@ if __name__ == '__main__':
             {'request.dispatch': cherrypy.dispatch.MethodDispatcher()}
         }
     )
-
-    cherrypy.engine.start()
-    cherrypy.engine.block()
+    return cherrypy
+    cherrypy.config.update({'server.socket_host': '0.0.0.0', 'server.socket_port': 80})
+    # cherrypy.engine.start()
+    # cherrypy.engine.block()

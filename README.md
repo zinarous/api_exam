@@ -1,5 +1,5 @@
-A basic api using the CherryPy framework and Python 3.9.2.
-#Run
+# A basic api using the CherryPy framework and Python 3.9.2.
+# Run
 Run it as follows:
 
 ``` $ docker-compose up ```
@@ -26,14 +26,14 @@ You can check all departments by http://locahost:8080/department/ Also it has fi
 Finally you can stop the server as follows:
 
 ``` $ docker-compose down ```
-#Build/Rebuild
+# Build/Rebuild
 You may rebuild the server image:
 
 
 ```$ docker build -t api-start .```
 ```$ docker run -d -p 8080:8080 api-start```
 
-#Run tests
+# Run tests
 
 You may build and run tests (client part):
 
@@ -41,7 +41,7 @@ You may build and run tests (client part):
 ```$ docker build -t api-tests .```
 ```$ docker run -d -p 8080:8080 api-tests```
 
-#Show logs
+# Show logs
 
 To show logs open client CLI and use:
 ```$ cat tests.log```

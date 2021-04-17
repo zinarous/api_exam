@@ -38,7 +38,10 @@ data_joined
 Endpoints:
 /api/users/
 /api/department/
-You can check all users by http://localhost:8080/api/users/ Also it has filters by 'username' and 'department'
+You can check all users by http://localhost:8080/api/users/ 
+Also it has filters by 'username' and 'department'
+For instance you can go to http://localhost:8080/api/users/alex and find user by this username or find username by the part of the name.
+The same logic for department, by finding department find the usernames with this department.
 
 You can check all departments by http://localhost:8080/api/department/ Also it has filter by 'department'
 

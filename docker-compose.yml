@@ -6,7 +6,7 @@ services:
 
     build: server/
 
-    command: python3 ./api_final.py
+    command: api_final.py
 
     ports:
       - 8080:8080

@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+
+  server:
+
+    build: server/
+
+    command: python3 ./api_final.py
+
+    ports:
+      - 8080:8080
+
+  client:
+
+    build: client/
+
+    command: sh -c "pytest -v -s -n2 test_api.py --disable-warnings; tail -f ../dev/null"
+
+    network_mode: host
+ 
+    depends_on:
+      - server

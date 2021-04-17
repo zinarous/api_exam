@@ -34,13 +34,13 @@ username
 email
 department
 data_joined
+
 Endpoints:
+/api/users/
+/api/department/
+You can check all users by http://locahost:8080/api/users/ Also it has filters by 'username' and 'department'
 
-/users/
-/department/
-You can check all users by http://locahost:8080/users/ Also it has filters by 'username' and 'department'
-
-You can check all departments by http://locahost:8080/department/ Also it has filter by 'department'
+You can check all departments by http://locahost:8080/api/department/ Also it has filter by 'department'
 
 Finally you can stop the server as follows:
 

@@ -77,8 +77,7 @@ class Deps:
         return ('data: %s' % data1)
     exposed = True
 
-# if __name__ == '__main__':
-def serv_start():
+if __name__ == '__main__':
     cherrypy.tree.mount(
         Users(), '/api/users',
         {'/':
@@ -93,7 +92,5 @@ def serv_start():
         }
     )
     cherrypy.config.update({'server.socket_host': '0.0.0.0', 'server.socket_port': 8080})
-    return cherrypy
-    # cherrypy.engine.start()
-    # cherrypy.engine.block()
-serv_start().quickstart()
+    cherrypy.engine.start()
+    cherrypy.engine.block()

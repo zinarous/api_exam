@@ -1,7 +1,24 @@
 # A basic api using the CherryPy framework and Python 3.9.2.
 # But before we start, it's better to taste delicious and tasty chicken!
 ![Kurochka KFC](https://github.com/zinarous/api_exam/blob/main/KFC.jpg)
-# Run
+# Build/Rebuild API Image
+You may rebuild the server image:
+
+
+```$ docker build -t api_final .```
+
+```$ docker run -d -p 8080:8080 api_final```
+
+# Build API tests Image
+
+You may build and run tests (client part):
+
+
+```$ docker build -t test_api .```
+
+```$ docker run -d -p 8080:8080 test_api```
+
+# Compose run
 Run it as follows:
 
 ``` $ docker-compose up ```
@@ -28,23 +45,6 @@ You can check all departments by http://locahost:8080/department/ Also it has fi
 Finally you can stop the server as follows:
 
 ``` $ docker-compose down ```
-
-# Build/Rebuild
-You may rebuild the server image:
-
-
-```$ docker build -t api_final .```
-
-```$ docker run -d -p 8080:8080 api_final```
-
-# Run tests
-
-You may build and run tests (client part):
-
-
-```$ docker build -t test_api .```
-
-```$ docker run -d -p 8080:8080 test_api```
 
 # Show logs
 

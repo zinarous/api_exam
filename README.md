@@ -25,7 +25,7 @@ Run it as follows:
 
 Tests will start automatically
 
-You can point your browser to http://locahost:8080/
+You can point your browser to http://localhost:8080/
 
 There are database of users:
 
@@ -38,9 +38,9 @@ data_joined
 Endpoints:
 /api/users/
 /api/department/
-You can check all users by http://locahost:8080/api/users/ Also it has filters by 'username' and 'department'
+You can check all users by http://localhost:8080/api/users/ Also it has filters by 'username' and 'department'
 
-You can check all departments by http://locahost:8080/api/department/ Also it has filter by 'department'
+You can check all departments by http://localhost:8080/api/department/ Also it has filter by 'department'
 
 Finally you can stop the server as follows:
 

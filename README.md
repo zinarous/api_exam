@@ -29,15 +29,15 @@ You can point your browser to http://localhost:8080/
 
 There are database of users:
 
-id
+* id
 
-username
+* username
 
-email
+* email
 
-department
+* department
 
-data_joined
+* data_joined
 
 
 Endpoints:

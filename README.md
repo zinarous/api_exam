@@ -1,6 +1,12 @@
 # A basic api using the CherryPy framework and Python 3.9.2.
 # But before we start, it's better to taste delicious and tasty chicken!
 ![Kurochka KFC](https://github.com/zinarous/api_exam/blob/main/KFC.jpg)
+# Libraries used
+
+* cherrypy
+* pytest
+* requests
+
 # Build/Rebuild API Image
 You may rebuild the server image:
 
@@ -23,22 +29,17 @@ Run it as follows:
 
 ``` $ docker-compose up ```
 
-Tests will start automatically
+Tests will be started automatically
 
 You can point your browser to http://localhost:8080/
 
 There are database of users:
 
 * id
-
 * username
-
 * email
-
 * department
-
 * data_joined
-
 
 Endpoints:
 /api/users/

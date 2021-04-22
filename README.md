@@ -6,6 +6,7 @@
 * cherrypy
 * pytest
 * requests
+* pytest-xdist
 
 # Build/Rebuild API Image
 You may rebuild the server image:

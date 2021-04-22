@@ -30,10 +30,15 @@ You can point your browser to http://localhost:8080/
 There are database of users:
 
 id
+
 username
+
 email
+
 department
+
 data_joined
+
 
 Endpoints:
 /api/users/
